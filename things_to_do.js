@@ -56,10 +56,6 @@ data = [
         "link": ""
 	},
     {	
-        "name": "Download a productive email app",
-        "link": "https://techcommunity.microsoft.com/t5/outlook-blog/five-time-saving-outlook-mobile-tips-for-small-businesses/ba-p/752838"
-	},
-    {	
         "name": "Learn how to do calligraphy",
         "link": "https://www.youtube.com/watch?v=sBoVGqiSzr4"
 	},
