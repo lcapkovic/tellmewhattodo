@@ -112,7 +112,7 @@ data = [
         "link": "https://www.theartofdoingstuff.com/how-to-darn-a-sock/"
     },
     {
-        "name": "Check you Facebook privacy settings",
+        "name": "Check your Facebook privacy settings",
         "link": "https://www.facebook.com/help/193677450678703/"
     },
     {
