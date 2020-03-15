@@ -11,7 +11,7 @@ data = [
         "name": "Take a new LinkedIn profile picture",
         "link": ""
 	},
-     {	
+    {	
         "name": "Update your LinkedIn",
         "link": ""
 	},
@@ -82,5 +82,89 @@ data = [
     {	
         "name": "Find a joke and tell a friend",
         "link": "https://www.boredpanda.com/funniest-two-line-jokes/?utm_source=google&utm_medium=organic&utm_campaign=organic"
-	}
+    },
+    {
+        "name": "Read a book",
+        "link": "https://www.goodreads.com/choiceawards/best-books-2019"
+    },
+    {
+        "name": "Learn how to make a website",
+        "link": "https://www.w3schools.com/howto/howto_make_a_website.asp"
+    },
+    {
+        "name": "Learn how to solve the Rubik's cube",
+        "link": "https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/"
+    },
+    {
+        "name": "Read a random Wikipedia article",
+        "link": "https://en.wikipedia.org/wiki/Special:Random"
+    },
+    {
+        "name": "Do 10 squats",
+        "link": ""
+    },
+    {
+        "name": "Read about the Demon core",
+        "link": "https://en.wikipedia.org/wiki/Demon_core"
+    },
+    {
+        "name": "Learn how to darn a sock",
+        "link": "https://www.theartofdoingstuff.com/how-to-darn-a-sock/"
+    },
+    {
+        "name": "Check you Facebook privacy settings",
+        "link": "https://www.facebook.com/help/193677450678703/"
+    },
+    {
+        "name": "Memorize more digits of Pi",
+        "link": "https://www.piday.org/million/"
+    },
+    {
+        "name": "Do your laundry",
+        "link": ""
+    },
+    {
+        "name": "Clean your bathroom",
+        "link": ""
+    },
+    {
+        "name": "Test your typing speed",
+        "link": "https://10fastfingers.com/typing-test/english"
+    },
+    {
+        "name": "Get a plant",
+        "link": ""
+    },
+    {
+        "name": "Drink some water",
+        "link": ""
+    },
+    {
+        "name": "Listen to your favorite song",
+        "link": ""
+    },
+    {
+        "name": "Call your mom",
+        "link": ""
+    },
+    {
+        "name": "Read about a TV trope",
+        "link": "https://tvtropes.org/"
+    },
+    {
+        "name": "Learn to draw",
+        "link": "https://drawabox.com/"
+    },
+    {
+        "name": "Change your passwords",
+        "link": ""
+    },
+    {
+        "name": "Cook something you've never cooked before",
+        "link": ""
+    },
+    {
+        "name": "Reconnect with a friend",
+        "link": ""
+    }
 ];
