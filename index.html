@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <script type="text/javascript" src="things_to_do.js"></script>
         <style>
@@ -14,7 +15,7 @@
             }
 
             .button {
-                background-color: #4CAF50; /* Green */
+                background-color: #000000; /* Green */
                 border: none;
                 color: white;
                 padding: 16px 32px;
@@ -30,20 +31,68 @@
             .button1 {
                 background-color: white; 
                 color: black; 
-                border: 2px solid #4CAF50;
+                border: 2px solid rgb(0, 0, 0);
             }
 
             .button1:hover {
-                background-color: #4CAF50;
+                background-color: rgb(0, 0, 0);
                 color: white;
             }
 
             .wrapper {
                 text-align: center;
+                height: 100%;
             }
 
             body {
                 font-family: 'Roboto', sans-serif;
+                position: absolute;
+                width: 100%;
+                height: 75%;
+                top: 25%;
+                margin: 0;
+            }
+
+            html {
+                height: 100%;
+            }
+
+            .spinning {
+                color:#808080;
+            }
+
+            .title {
+                font-size: 4em;
+                /* display: block; */
+                font-weight: bold;
+                margin: 2rem;
+            }
+
+            .idea {
+                font-size: 2em;
+                /* display: block; */
+                /* font-weight: bold; */
+                margin: 2rem;
+            }
+
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                text-align: right;
+                padding: 1em;
+            }
+
+            .footer-text {
+                transition-duration: 0.15s;
+                color:rgb(187, 187, 187);
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .footer-text:hover {
+                color:rgb(95, 95, 95)
             }
         </style>
         
@@ -52,18 +101,37 @@
 
 
 <div class="wrapper">
-    <h1 class="textCenter">Bored?</h1>
-        <button class="button button1" onclick="generateIdea()">Tell Me What To Do</button>
-    <h1 class="textCenter" id="idea">...</h1>
+    <div class="title">Bored?</div>
+    <button class="button button1" onclick="generateIdea()">Tell Me What To Do</button>
+    <div class="idea" id="idea"></div>
     <!-- <iframe width="420" height="315" frameBorder="0"
     src="https://www.youtube.com/embed/tgbNymZ7vqY">
     </iframe> -->
+    <div class="footer">
+        <a target="_blank" href="https://github.com/lcapkovic/tellmewhattodo" class="footer-text">Contribute</div>
+    </div>
 </div>
 
 <script>
-    function generateIdea() {
-        document.getElementById("idea").textContent = "Do a thing.";
-        console.log(data.length);
+    function generateIdea() {        
+        var initialFreq = Math.floor(Math.random() * 20) + 20;
+        getRandomIdea(initialFreq, initialFreq, 0);
+    }
+
+    function getRandomIdea(freq, initialFreq, prev) {
+        var ix;
+        do {
+            ix = Math.floor(Math.random() * data.length);
+        } while (ix == prev)
+
+        document.getElementById("idea").textContent = data[ix].name;
+        document.getElementById("idea").style.opacity = 1 - Math.cbrt(freq/initialFreq);
+
+        if (freq == 0) {
+            return;
+        }
+
+        setTimeout(getRandomIdea.bind(null, freq-1, initialFreq, ix), 1000/(freq+4));
     }
 </script>
 </body>
