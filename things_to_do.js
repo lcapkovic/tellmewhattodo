@@ -180,7 +180,7 @@ data = [
         link: 'https://fossbytes.com/google-alternative-best-search-engine/'
     },
     {
-        name: 'Watch Gourmet Pringles attempt',
+        name: 'Watch an attempt to make Gourmet Pringles',
         link: 'https://www.youtube.com/watch?v=J3xLG-whfFk'
     },
     {
@@ -265,5 +265,29 @@ data = [
     {
         name: 'Take a guitar lesson',
         link: 'https://youtu.be/m24DPDKZ4zA'
+    },
+    {
+        name: "Solve a Sudoku puzzle",
+        link: "https://sudoku.com/"
+    },
+    {
+        name: "Do a mini crossword",
+        link: "https://www.nytimes.com/crosswords/game/mini"
+    },
+    {
+        name: "Learn about typography",
+        link: "https://practicaltypography.com/typography-in-ten-minutes.html"
+    },
+    {
+        name: "Make something",
+        link: ""
+    },
+    {
+        name: "Learn how to fold an origami crane",
+        link: "https://origami.me/crane/"
+    },
+    {
+        name: "Change your wallpaper",
+        link: "https://unsplash.com/t/wallpapers"
     }
 ];
